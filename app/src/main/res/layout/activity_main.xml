@@ -6,25 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!--<com.example.testdemo.utils.HelpLinearlayout
-        android:id="@+id/svOutLayout"
-        android:layout_width="370dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="158dp"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/spinner_background"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
-
-        <androidx.appcompat.widget.SearchView
-            android:id="@+id/sv"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints" />
-    </com.example.testdemo.utils.HelpLinearlayout>-->
     <FrameLayout
         android:id="@+id/svOutLayout"
         android:layout_width="370dp"
@@ -45,19 +26,10 @@
             tools:ignore="MissingConstraints"
             android:elevation="20dp"/>
     </FrameLayout>
-    <!--<androidx.appcompat.widget.SearchView
-        android:id="@+id/sv"
-        android:background="@drawable/spinner_background"
-        android:layout_width="370dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="158dp"
-        android:layout_marginTop="100dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />-->
 
-    <ListView
-        android:id="@+id/lv"
+
+    <ExpandableListView
+        android:id="@+id/pickup_resend_boxs_lv"
         android:layout_width="390dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="158dp"
@@ -66,5 +38,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/svOutLayout"
         tools:ignore="MissingConstraints" />
+    <!--<ExpandableListView
+        android:id="@+id/pickup_resend_boxs_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
